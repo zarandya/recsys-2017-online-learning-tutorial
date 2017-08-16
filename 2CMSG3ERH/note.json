@@ -1,9 +1,9 @@
 {
   "paragraphs": [
     {
-      "text": "import pandas as pd\nimport numpy as np\n    \ndata \u003d pd.read_csv(\u0027data_session\u0027, header \u003d None, delimiter \u003d \" \")\ndata.head()",
+      "text": "%python\nimport pandas as pd\nimport numpy as np\n    \ndata \u003d pd.read_csv(\u0027/home/zarandy/Documents/sztaki/git/flink-ps/testdata/data_session\u0027, header \u003d None, delimiter \u003d \" \")\ndata.head()",
       "user": "anonymous",
-      "dateUpdated": "Aug 9, 2017 9:14:15 AM",
+      "dateUpdated": "Aug 11, 2017 2:14:39 PM",
       "config": {
         "enabled": true,
         "editorMode": "ace/mode/python",
@@ -31,8 +31,8 @@
       "jobName": "paragraph_1498219672502_1900026401",
       "id": "20170623-092635_1347264733",
       "dateCreated": "Jun 23, 2017 2:07:52 PM",
-      "dateStarted": "Aug 9, 2017 9:14:15 AM",
-      "dateFinished": "Aug 9, 2017 9:14:19 AM",
+      "dateStarted": "Aug 11, 2017 2:14:39 PM",
+      "dateFinished": "Aug 11, 2017 2:14:42 PM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
@@ -40,7 +40,7 @@
       "title": "Data for batch train + eval",
       "text": "%md\n# Data for batch train + eval",
       "user": "anonymous",
-      "dateUpdated": "Aug 9, 2017 9:21:59 AM",
+      "dateUpdated": "Aug 11, 2017 10:36:22 AM",
       "config": {
         "colWidth": 12.0,
         "enabled": true,
@@ -71,15 +71,42 @@
       "jobName": "paragraph_1502262645667_-1636281043",
       "id": "20170809-091045_321543327",
       "dateCreated": "Aug 9, 2017 9:10:45 AM",
-      "dateStarted": "Aug 9, 2017 9:21:59 AM",
-      "dateFinished": "Aug 9, 2017 9:21:59 AM",
+      "dateStarted": "Aug 11, 2017 10:36:22 AM",
+      "dateFinished": "Aug 11, 2017 10:36:24 AM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "t0 \u003d data[0][0]\nday \u003d 86400\nnumberOfDaysForTrain \u003d 50\nt1 \u003d t0 + int(day * numberOfDaysForTrain)\n\nnumberOfDaysForTest \u003d 4        \nt2 \u003d t1 + day*numberOfDaysForTest",
+      "text": "%md\n",
       "user": "anonymous",
-      "dateUpdated": "Aug 9, 2017 9:14:22 AM",
+      "dateUpdated": "Aug 11, 2017 10:36:27 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1502279522342_-1226141922",
+      "id": "20170809-135202_401714237",
+      "dateCreated": "Aug 9, 2017 1:52:02 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "t0 \u003d data[0][0]\nday \u003d 86400\nnumberOfDaysForTrain \u003d 20*7\nt1 \u003d t0 + int(day * numberOfDaysForTrain)\n\nnumberOfDaysForTest \u003d 7    \nt2 \u003d t1 + day*numberOfDaysForTest\n\ni \u003d 0",
+      "user": "anonymous",
+      "dateUpdated": "Aug 11, 2017 2:14:45 PM",
       "config": {
         "enabled": true,
         "editorMode": "ace/mode/python",
@@ -103,15 +130,51 @@
       "jobName": "paragraph_1498219672503_1899641652",
       "id": "20170623-092803_990355466",
       "dateCreated": "Jun 23, 2017 2:07:52 PM",
-      "dateStarted": "Aug 9, 2017 9:14:22 AM",
-      "dateFinished": "Aug 9, 2017 9:14:22 AM",
+      "dateStarted": "Aug 11, 2017 2:14:45 PM",
+      "dateFinished": "Aug 11, 2017 2:14:46 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "i \u003d i + 1\nprint(i)\n\nnumberOfDaysForTrain \u003d (20 + i) * 7\n\nt1 \u003d t0 + int(day * numberOfDaysForTrain)\nt2 \u003d t1 + day * numberOfDaysForTest",
+      "user": "anonymous",
+      "dateUpdated": "Aug 11, 2017 2:17:59 PM",
+      "config": {
+        "colWidth": 3.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "9\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502453437928_830635717",
+      "id": "20170811-141037_1641391255",
+      "dateCreated": "Aug 11, 2017 2:10:37 PM",
+      "dateStarted": "Aug 11, 2017 2:17:59 PM",
+      "dateFinished": "Aug 11, 2017 2:17:59 PM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "data_train_test \u003d data[data[0] \u003c\u003d t2]\ndata_train \u003d data_train_test[data_train_test[0] \u003c\u003d t1]\ndata_test \u003d data_train_test[data_train_test[0] \u003e t1]",
       "user": "anonymous",
-      "dateUpdated": "Aug 9, 2017 9:14:24 AM",
+      "dateUpdated": "Aug 11, 2017 2:18:02 PM",
       "config": {
         "enabled": true,
         "editorMode": "ace/mode/python",
@@ -120,7 +183,7 @@
           "language": "python",
           "editOnDblClick": false
         },
-        "colWidth": 6.0
+        "colWidth": 12.0
       },
       "settings": {
         "params": {},
@@ -134,15 +197,15 @@
       "jobName": "paragraph_1498219672503_1899641652",
       "id": "20170623-093121_1572714144",
       "dateCreated": "Jun 23, 2017 2:07:52 PM",
-      "dateStarted": "Aug 9, 2017 9:14:24 AM",
-      "dateFinished": "Aug 9, 2017 9:14:24 AM",
+      "dateStarted": "Aug 11, 2017 2:18:02 PM",
+      "dateFinished": "Aug 11, 2017 2:18:02 PM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "print(\"#users in train: \")\nprint(len(data_train[1].unique()))\nprint(\"#users in test: \")\nprint(len(data_test[1].unique()))\nprint(\"#users in both: \")\nprint(len(set(data_test[1].unique()).intersection(set(data_train[1].unique()))))",
       "user": "anonymous",
-      "dateUpdated": "Aug 9, 2017 9:14:26 AM",
+      "dateUpdated": "Aug 11, 2017 2:18:03 PM",
       "config": {
         "enabled": true,
         "editorMode": "ace/mode/python",
@@ -162,7 +225,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "#users in train: \n16192\n#users in test: \n3272\n#users in both: \n2612\n"
+            "data": "#users in train: \n31689\n#users in test: \n4270\n#users in both: \n3777\n"
           }
         ]
       },
@@ -170,15 +233,15 @@
       "jobName": "paragraph_1498219672504_1897717907",
       "id": "20170623-093715_1649813791",
       "dateCreated": "Jun 23, 2017 2:07:52 PM",
-      "dateStarted": "Aug 9, 2017 9:14:26 AM",
-      "dateFinished": "Aug 9, 2017 9:14:26 AM",
+      "dateStarted": "Aug 11, 2017 2:18:03 PM",
+      "dateFinished": "Aug 11, 2017 2:18:03 PM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "data_train \u003d pd.concat([data_train[0], data_train[1], data_train[2]], axis \u003d 1)\ndata_train.to_csv(\u0027data_session_train\u0027, sep \u003d \u0027 \u0027, header \u003d False, index \u003d False)",
+      "text": "data_train \u003d pd.concat([data_train[0], data_train[1], data_train[2]], axis \u003d 1)\ndata_train.to_csv(\u0027data_session_train\u0027+str(i), sep \u003d \u0027,\u0027, header \u003d False, index \u003d False)",
       "user": "anonymous",
-      "dateUpdated": "Aug 9, 2017 9:14:27 AM",
+      "dateUpdated": "Aug 11, 2017 2:18:05 PM",
       "config": {
         "colWidth": 6.0,
         "enabled": true,
@@ -201,15 +264,15 @@
       "jobName": "paragraph_1499154843744_-1721352855",
       "id": "20170704-095403_1044627090",
       "dateCreated": "Jul 4, 2017 9:54:03 AM",
-      "dateStarted": "Aug 9, 2017 9:14:27 AM",
-      "dateFinished": "Aug 9, 2017 9:14:28 AM",
+      "dateStarted": "Aug 11, 2017 2:18:05 PM",
+      "dateFinished": "Aug 11, 2017 2:18:06 PM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "data_test \u003d pd.concat([data_test[0], data_test[1], data_test[2]], axis \u003d 1)\ndata_test.to_csv(\u0027data_session_test\u0027, sep \u003d \u0027 \u0027, header \u003d False, index \u003d False)",
+      "text": "data_test \u003d pd.concat([data_test[0], data_test[1], data_test[2]], axis \u003d 1)\ndata_test.to_csv(\u0027data_session_test\u0027+str(i), sep \u003d \u0027,\u0027, header \u003d False, index \u003d False)",
       "user": "anonymous",
-      "dateUpdated": "Aug 9, 2017 9:14:29 AM",
+      "dateUpdated": "Aug 11, 2017 2:18:07 PM",
       "config": {
         "colWidth": 6.0,
         "enabled": true,
@@ -232,15 +295,15 @@
       "jobName": "paragraph_1499154878387_1473430157",
       "id": "20170704-095438_605859308",
       "dateCreated": "Jul 4, 2017 9:54:38 AM",
-      "dateStarted": "Aug 9, 2017 9:14:29 AM",
-      "dateFinished": "Aug 9, 2017 9:14:29 AM",
+      "dateStarted": "Aug 11, 2017 2:18:07 PM",
+      "dateFinished": "Aug 11, 2017 2:18:07 PM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n# Data for weekly train + eval",
       "user": "anonymous",
-      "dateUpdated": "Aug 9, 2017 9:11:56 AM",
+      "dateUpdated": "Aug 9, 2017 1:47:06 PM",
       "config": {
         "colWidth": 12.0,
         "enabled": true,
@@ -270,138 +333,160 @@
       "jobName": "paragraph_1501857291516_-1321268935",
       "id": "20170804-163451_740128735",
       "dateCreated": "Aug 4, 2017 4:34:51 PM",
-      "dateStarted": "Aug 9, 2017 9:11:56 AM",
-      "dateFinished": "Aug 9, 2017 9:11:58 AM",
+      "dateStarted": "Aug 9, 2017 1:47:07 PM",
+      "dateFinished": "Aug 9, 2017 1:47:07 PM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "week0 \u003d t0 + int(day * 7)\nweek1 \u003d week0 + int(day * 7)\nweek2 \u003d week1 + int(day * 7)\nweek3 \u003d week2 + int(day * 7)",
       "user": "anonymous",
-      "dateUpdated": "Aug 9, 2017 9:14:38 AM",
+      "dateUpdated": "Aug 9, 2017 1:47:07 PM",
       "config": {
         "colWidth": 12.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
-          "language": "python",
+          "language": "scala",
           "editOnDblClick": false
         },
-        "editorMode": "ace/mode/python"
+        "editorMode": "ace/mode/scala"
       },
       "settings": {
         "params": {},
         "forms": {}
       },
       "results": {
-        "code": "SUCCESS",
-        "msg": []
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\n\n\n\u003cconsole\u003e:27: error: not found: value week0\nval $ires6 \u003d week0\n             ^\n\n\n\n\u003cconsole\u003e:25: error: not found: value week0\n       week0 \u003d t0 + int(day * 7)\n       ^\n"
+          }
+        ]
       },
       "apps": [],
       "jobName": "paragraph_1502262716361_1260816879",
       "id": "20170809-091156_723895718",
       "dateCreated": "Aug 9, 2017 9:11:56 AM",
-      "dateStarted": "Aug 9, 2017 9:14:38 AM",
-      "dateFinished": "Aug 9, 2017 9:14:38 AM",
-      "status": "FINISHED",
+      "dateStarted": "Aug 9, 2017 1:47:28 PM",
+      "dateFinished": "Aug 9, 2017 1:47:28 PM",
+      "status": "ERROR",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "data_until_week3 \u003d data[data[0] \u003c\u003d week3]\ndata_week3 \u003d data_until_week3[data_until_week3[0] \u003e week2]\n\ndata_until_week2 \u003d data[data[0] \u003c\u003d week2]\ndata_week2 \u003d data_until_week2[data_until_week2[0] \u003e week1]\n\ndata_until_week1 \u003d data[data[0] \u003c\u003d week1]\ndata_week1 \u003d data_until_week1[data_until_week1[0] \u003e week0]\n\ndata_week0 \u003d data[data[0] \u003c\u003d week0]",
       "user": "anonymous",
-      "dateUpdated": "Aug 9, 2017 9:18:37 AM",
+      "dateUpdated": "Aug 9, 2017 1:47:07 PM",
       "config": {
         "colWidth": 12.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
-          "language": "python",
+          "language": "scala",
           "editOnDblClick": false
         },
-        "editorMode": "ace/mode/python"
+        "editorMode": "ace/mode/scala"
       },
       "settings": {
         "params": {},
         "forms": {}
       },
       "results": {
-        "code": "SUCCESS",
-        "msg": []
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\n\n\n\u003cconsole\u003e:1: error: identifier expected but integer literal found.\ndata_until_week3 \u003d data[data[0] \u003c\u003d week3]\n                             ^\n"
+          }
+        ]
       },
       "apps": [],
       "jobName": "paragraph_1502262878314_-105028037",
       "id": "20170809-091438_962856991",
       "dateCreated": "Aug 9, 2017 9:14:38 AM",
-      "dateStarted": "Aug 9, 2017 9:18:37 AM",
-      "dateFinished": "Aug 9, 2017 9:18:37 AM",
-      "status": "FINISHED",
+      "dateStarted": "Aug 9, 2017 1:47:28 PM",
+      "dateFinished": "Aug 9, 2017 1:47:28 PM",
+      "status": "ERROR",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "data_week3 \u003d pd.concat([data_week3[0], data_week3[1], data_week3[2]], axis \u003d 1)\ndata_week2 \u003d pd.concat([data_week2[0], data_week2[1], data_week2[2]], axis \u003d 1)\ndata_week1 \u003d pd.concat([data_week1[0], data_week1[1], data_week1[2]], axis \u003d 1)\ndata_week0 \u003d pd.concat([data_week0[0], data_week0[1], data_week0[2]], axis \u003d 1)",
       "user": "anonymous",
-      "dateUpdated": "Aug 9, 2017 9:19:48 AM",
+      "dateUpdated": "Aug 9, 2017 1:47:07 PM",
       "config": {
         "colWidth": 12.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
-          "language": "python",
+          "language": "scala",
           "editOnDblClick": false
         },
-        "editorMode": "ace/mode/python"
+        "editorMode": "ace/mode/scala"
       },
       "settings": {
         "params": {},
         "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": []
       },
       "apps": [],
       "jobName": "paragraph_1502263117560_-1851081487",
       "id": "20170809-091837_699549372",
       "dateCreated": "Aug 9, 2017 9:18:37 AM",
-      "dateStarted": "Aug 9, 2017 9:19:48 AM",
-      "dateFinished": "Aug 9, 2017 9:19:48 AM",
+      "dateStarted": "Aug 9, 2017 1:47:28 PM",
+      "dateFinished": "Aug 9, 2017 1:47:28 PM",
       "status": "FINISHED",
+      "errorMessage": "",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "data_week3.to_csv(\"data_week3\", sep\u003d\" \", header\u003dFalse, index\u003dFalse)\ndata_week2.to_csv(\"data_week2\", sep\u003d\" \", header\u003dFalse, index\u003dFalse)\ndata_week1.to_csv(\"data_week1\", sep\u003d\" \", header\u003dFalse, index\u003dFalse)\ndata_week0.to_csv(\"data_week0\", sep\u003d\" \", header\u003dFalse, index\u003dFalse)",
       "user": "anonymous",
-      "dateUpdated": "Aug 9, 2017 9:21:15 AM",
+      "dateUpdated": "Aug 9, 2017 1:47:07 PM",
       "config": {
         "colWidth": 12.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
-          "language": "python",
+          "language": "scala",
           "editOnDblClick": false
         },
-        "editorMode": "ace/mode/python"
+        "editorMode": "ace/mode/scala"
       },
       "settings": {
         "params": {},
         "forms": {}
       },
       "results": {
-        "code": "SUCCESS",
-        "msg": []
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\n\n\n\u003cconsole\u003e:26: error: not found: value data_week3\n       data_week3.to_csv(\"data_week3\", sep\u003d\" \", header\u003dFalse, index\u003dFalse)\n       ^\n\n\n\n\u003cconsole\u003e:26: error: not found: value sep\n       data_week3.to_csv(\"data_week3\", sep\u003d\" \", header\u003dFalse, index\u003dFalse)\n                                       ^\n\n\n\n\u003cconsole\u003e:26: error: not found: value header\n       data_week3.to_csv(\"data_week3\", sep\u003d\" \", header\u003dFalse, index\u003dFalse)\n                                                ^\n\n\n\n\u003cconsole\u003e:26: error: not found: value index\n       data_week3.to_csv(\"data_week3\", sep\u003d\" \", header\u003dFalse, index\u003dFalse)\n                                                              ^\n"
+          }
+        ]
       },
       "apps": [],
       "jobName": "paragraph_1502263188050_318810365",
       "id": "20170809-091948_1006110129",
       "dateCreated": "Aug 9, 2017 9:19:48 AM",
-      "dateStarted": "Aug 9, 2017 9:21:15 AM",
-      "dateFinished": "Aug 9, 2017 9:21:15 AM",
-      "status": "FINISHED",
+      "dateStarted": "Aug 9, 2017 1:47:28 PM",
+      "dateFinished": "Aug 9, 2017 1:47:29 PM",
+      "status": "ERROR",
       "progressUpdateIntervalMs": 500
     },
     {
       "user": "anonymous",
-      "config": {},
+      "dateUpdated": "Aug 9, 2017 1:47:07 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/scala"
+      },
       "settings": {
         "params": {},
         "forms": {}
@@ -417,25 +502,25 @@
   "name": "DataManipulation",
   "id": "2CMSG3ERH",
   "angularObjects": {
-    "2CQ5CHCVK:shared_process": [],
-    "2CQA8ANBF:shared_process": [],
-    "2CPUWTNP5:shared_process": [],
-    "2CS666EJY:shared_process": [],
-    "2CQ1SYMWR:shared_process": [],
-    "2CRX78HZ4:shared_process": [],
-    "2CSE5JPER:shared_process": [],
-    "2CPEJRKEY:shared_process": [],
-    "2CR9VJ4VU:shared_process": [],
-    "2CQ144JX5:shared_process": [],
-    "2CNWA3851:shared_process": [],
-    "2CRTAP1ZV:shared_process": [],
-    "2CQVGSGZX:shared_process": [],
-    "2CRQ2EJN1:shared_process": [],
-    "2CS38SHJX:shared_process": [],
-    "2CNU9Q44Q:shared_process": [],
-    "2CSK5B72V:shared_process": [],
-    "2CRPWHNGP:shared_process": [],
-    "2CS7NTJ4W:shared_process": []
+    "2CSHZBPGQ:shared_process": [],
+    "2CP4XT1QX:shared_process": [],
+    "2CRVTB39U:shared_process": [],
+    "2CPZRX6Q1:shared_process": [],
+    "2CRK8VUS1:shared_process": [],
+    "2CSXE2NNW:shared_process": [],
+    "2CRJWU2MB:shared_process": [],
+    "2CRXJDA83:shared_process": [],
+    "2CQNM5BNZ:shared_process": [],
+    "2CSFSUNWV:shared_process": [],
+    "2CS7S73J3:shared_process": [],
+    "2CQZB77TV:shared_process": [],
+    "2CPH1QPYS:shared_process": [],
+    "2CRF184DK:shared_process": [],
+    "2CRXV73KM:shared_process": [],
+    "2CRGU6BSC:shared_process": [],
+    "2CPC784ZU:shared_process": [],
+    "2CPAS9QKR:shared_process": [],
+    "2CRN22ASG:shared_process": []
   },
   "config": {},
   "info": {}

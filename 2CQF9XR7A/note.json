@@ -3,7 +3,7 @@
     {
       "text": "%md\n# Online learning and time-aware evaluation in Alpenglow\n\u003cp align\u003d\"center\"\u003e\n  \u003cimg src\u003d\"https://github.com/rpalovics/recsys-2017-online-learning-tutorial/blob/master/figs/online%20reco.png?raw\u003dtrue\" alt\u003d\"alpenglow\"/\u003e\n\u003c/p\u003e",
       "user": "anonymous",
-      "dateUpdated": "Aug 3, 2017 12:03:03 PM",
+      "dateUpdated": "Aug 10, 2017 5:00:12 PM",
       "config": {
         "colWidth": 12.0,
         "enabled": true,
@@ -13,8 +13,8 @@
           "editOnDblClick": true
         },
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
-        "tableHide": false
+        "editorHide": false,
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -845,25 +845,25 @@
   "name": "Alpenglow",
   "id": "2CQF9XR7A",
   "angularObjects": {
-    "2CQEV1KZW:shared_process": [],
-    "2CRKCK1NF:shared_process": [],
-    "2CRF8AWSP:shared_process": [],
-    "2CP4WKAT7:shared_process": [],
-    "2CPUXQHH6:shared_process": [],
-    "2CPA1PCD9:shared_process": [],
-    "2CQ7RBMUN:shared_process": [],
-    "2CN78HPAV:shared_process": [],
-    "2CRH2FK3R:shared_process": [],
-    "2CQNSADQH:shared_process": [],
-    "2CQRXZD89:shared_process": [],
-    "2CRDUPHCE:shared_process": [],
-    "2CNABP9UM:shared_process": [],
-    "2CPXHZ2CH:shared_process": [],
-    "2CRNE8QE4:shared_process": [],
-    "2CPJDUB2G:shared_process": [],
-    "2CNC49WN4:shared_process": [],
-    "2CPW8TH9V:shared_process": [],
-    "2CPUQ468Z:shared_process": []
+    "2CSHZBPGQ:shared_process": [],
+    "2CP4XT1QX:shared_process": [],
+    "2CRVTB39U:shared_process": [],
+    "2CPZRX6Q1:shared_process": [],
+    "2CRK8VUS1:shared_process": [],
+    "2CSXE2NNW:shared_process": [],
+    "2CRJWU2MB:shared_process": [],
+    "2CRXJDA83:shared_process": [],
+    "2CQNM5BNZ:shared_process": [],
+    "2CSFSUNWV:shared_process": [],
+    "2CS7S73J3:shared_process": [],
+    "2CQZB77TV:shared_process": [],
+    "2CPH1QPYS:shared_process": [],
+    "2CRF184DK:shared_process": [],
+    "2CRXV73KM:shared_process": [],
+    "2CRGU6BSC:shared_process": [],
+    "2CPC784ZU:shared_process": [],
+    "2CPAS9QKR:shared_process": [],
+    "2CRN22ASG:shared_process": []
   },
   "config": {
     "looknfeel": "default",
